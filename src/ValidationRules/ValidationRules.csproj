@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Ardalis.WebTestValidationRules</PackageId>
+    <Authors>Steve Smith (@ardalis)</Authors>
+    <Description>A collection of validation rules for Visual Studio Web Tests.</Description>
+    <Copyright>2019</Copyright>
+    <PackageProjectUrl>https://github.com/ardalis/ValidationRules</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ardalis/ValidationRules</RepositoryUrl>
+    <PackageTags>webtest, visual studio, load test, web test, validation rule, validationrule, validation</PackageTags>
+    <PackageReleaseNotes>Initial version.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.WebTestFramework">
+      <HintPath>..\..\lib\Microsoft.VisualStudio.QualityTools.WebTestFramework.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
